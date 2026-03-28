@@ -5,14 +5,6 @@ labels: ["bug"]
 
 body:
 
-  - type: input
-    id: Issue_Title
-    attributes:
-      label: "Issue Title"
-      description: "Short and clear summary of the issue"
-      placeholder: "E.g., Login button overlaps on mobile view"
-    validations:
-      required: true
 
   - type: dropdown
     id: Module
