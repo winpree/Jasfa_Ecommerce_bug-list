@@ -1,0 +1,120 @@
+---
+name: BUG_REPORT
+about: Describe this issue template's purpose here.
+title: BUG_
+labels: bug
+assignees: ''
+
+---
+
+name: "Advanced Bug Report"
+description: "Structured bug report for better triaging and tracking"
+title: "BUG_ "
+labels: ["bug"]
+
+body:
+
+  - type: input
+    id: Issue_Title
+    attributes:
+      label: "Issue Title"
+      description: "Short and clear summary of the issue"
+      placeholder: "E.g., Login button overlaps on mobile view"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: Module
+    attributes:
+      label: "Module"
+      description: "Select where the issue occurs"
+      options:
+        - USER 
+        - VENDOR
+        - ADMIN
+        - LOGIN
+        - REGISTER
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Detailed explanation of the issue"
+      placeholder: "Explain the problem and context"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Step by step to reproduce the bug"
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: Expected
+    attributes:
+      label: "Expected Result"
+      description: "What should happen?"
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual Result"
+      description: "What is happening instead?"
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: "Device Type"
+      options:
+        - Desktop
+        - Mobile
+        - Tablet
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      description: "How severe is this issue?"
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+
+ 
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "Attachments"
+      description: "Screenshots, videos, logs, or links"
+
+  - type: input
+    id: date
+    attributes:
+      label: "Date of Report"
+      placeholder: "DD-MM-YYYY"
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: "Initial Status"
+      options:
+        - Open
+        - In Progress
+        - Needs Info
+        - Closed
+    validations:
+      required: true
